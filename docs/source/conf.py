@@ -37,16 +37,16 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Sphinx Nameko Theme'
-copyright = u'2015'
+project = u'Sphinx Nameko MW Theme'
+copyright = u'2017'
 
 # The version info for the project, acts as replacement for |version| and
 # |release|, also used in various other places throughout the built documents.
 #
 # The short X.Y version.
-version = pkg_resources.get_distribution('sphinx_nameko_theme').version
+version = '0.1'
 # The full version, including alpha/beta/rc tags.
-release = version
+release = '0.0.1'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -55,10 +55,10 @@ pygments_style = 'sphinx'
 # -- Options for HTML output --------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.
-html_theme = 'nameko'
+html_theme = 'nameko-mw'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'sphinxnamekothemedoc'
+htmlhelp_basename = 'sphinxnamekomwthemedoc'
 
 
 # -- Options for manual page output -------------------------------------------
@@ -68,9 +68,9 @@ htmlhelp_basename = 'sphinxnamekothemedoc'
 man_pages = [
     (
         'index',
-        'Sphinx Nameko Theme',
-        u'Sphinx Nameko Theme Documentation',
-        [u'onefinestay'],
+        'Sphinx Nameko MW Theme',
+        u'Sphinx Nameko MW Theme Documentation',
+        [u'penseleit'],
         1,
     )
 ]

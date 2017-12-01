@@ -1,10 +1,10 @@
 # Project files
-docs/build
+docs/_build
 .coverage
 .tox
 
 # Python compiled files
-*.py[cod]
+# *.py[cod]
 
 # Python packages
 *.egg

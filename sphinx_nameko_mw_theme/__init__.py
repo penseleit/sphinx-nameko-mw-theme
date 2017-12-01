@@ -1,7 +1,7 @@
-"""Sphinx Nameko Theme.
+"""Sphinx Nameko MW Theme.
 
-A fork of https://github.com/ignacysokolowski/sphinx-readable-theme for use
-in Nameko (https://github.com/onefinestay/nameko)
+A fork of https://github.com/onefinestay/sphinx-nameko-theme for use
+at Mediaware (http://www.mediaware.com.au)
 
 """
 

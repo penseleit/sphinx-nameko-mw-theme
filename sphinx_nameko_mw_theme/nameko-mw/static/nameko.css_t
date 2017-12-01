@@ -15,7 +15,46 @@
 
 @import url('basic.css');
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Some elements from From Sphinx Better Theme
+*
+* https://github.com/irskep/sphinx-better-theme
+*/
+
+nav#rellinks {
+    float: right;
+}
+
+nav#rellinks li+li:before {
+    content: "|";
+}
+
+nav#breadcrumbs li+li:before {
+    content: "\00BB";
+}
+
+
+div.related.top {
+    border-bottom: 1px solid #aaa;
+	margin: 10px auto 0 auto;
+	max-width: 940px;
+}
+
+div.related.bottom {
+    border-top: 1px solid #aaa;
+	margin: 10px auto 0 auto;
+	max-width: 940px;
+}
+
+/*
+* End From Sphinx Better Theme
+*
+*/
+
+
 /* -- page layout --------------------------------------------------------- */
+
+
 
 body {
     font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
@@ -55,8 +94,9 @@ div.footer {
     color: #555;
     font-size: 14px;
     margin: 20px auto 30px auto;
-    text-align: right;
+    text-align: center;
     max-width: 880px;
+	width: 960px;
 }
 
 div.footer a {
@@ -66,8 +106,10 @@ div.footer a {
 
 div.related {
     padding: 10px 10px;
-    width: auto;
+    width: auto;1
 }
+
+
 
 div.sphinxsidebar {
     float: left;
@@ -487,8 +529,8 @@ div.viewcode-block:target {
         color: #888;
         margin: 0;
         padding: 10px 20px 20px;
-        text-align: left;
-        width: auto;
+        text-align: center;
+        width: 960px;
     }
 
     div.footer a {

@@ -1,12 +1,12 @@
 from setuptools import setup
 
 setup(
-    name='sphinx-nameko-theme',
-    version='0.0.3',
-    author='onefinestay',
-    author_email='nameko-devs@onefinestay.com',
-    description='Sphinx Nameko Theme',
-    url='https://github.com/onefinestay/sphinx-nameko-theme',
+    name='sphinx-nameko-mw-theme',
+    version='0.0.1',
+    author='penseleit',
+    author_email='penseleit@mediaware.com.au',
+    description='Sphinx Nameko MW Theme',
+    url='https://github.com/penseleit/sphinx-nameko-mw-theme',
     license='MIT',
     classifiers=[
         'Intended Audience :: Developers',
@@ -17,11 +17,11 @@ setup(
         'Topic :: Internet',
         'Topic :: Software Development :: Documentation',
     ],
-    packages=['sphinx_nameko_theme'],
+    packages=['sphinx_nameko_mw_theme'],
     install_requires=['sphinx'],
     entry_points = {
         'sphinx_themes': [
-            'path = sphinx_nameko_theme:get_html_theme_path',
+            'path = sphinx_nameko_mw_theme:get_html_theme_path',
         ]
     },
     include_package_data=True,

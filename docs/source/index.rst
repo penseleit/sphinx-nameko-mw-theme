@@ -1,32 +1,34 @@
-===================
-Sphinx Nameko Theme
-===================
+======================
+Sphinx Nameko MW Theme
+======================
 
-A fork of `Sphinx Readable Theme <https://github.com/ignacysokolowski/sphinx-readable-theme>`_ for use in `Nameko <https://github.com/onefinestay/nameko>`_.
+Official Sphinx theme for Mediaware
 
+Forked from Sphinx theme for `Nameko <https://github.com/onefinestay/nameko>`_.
+and combined with elements from the `Better <https://github.com/irskep/sphinx-better-theme>`_
+theme.
 
 Installation and setup
 ======================
 
-
 Install from PyPI::
 
-    $ pip install sphinx-nameko-theme
+    $ pip install sphinx-nameko-mw-theme
 
 And add this to your ``conf.py``:
 
 .. code-block:: python
 
-    import sphinx_nameko_theme
+    import sphinx_nameko_mw_theme
 
-    html_theme_path = [sphinx_nameko_theme.get_html_theme_path()]
-    html_theme = 'nameko'
+    html_theme_path = [sphinx_nameko_mw_theme.get_html_theme_path()]
+    html_theme = 'nameko-mw'
 
 
 License
 =======
 
-Sphinx Nameko Theme is licensed under the MIT license.
+Sphinx Nameko MW Theme is licensed under the MIT license.
 
 
 Changelog
