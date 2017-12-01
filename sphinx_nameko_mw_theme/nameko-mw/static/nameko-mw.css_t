@@ -1,12 +1,12 @@
 /*
- * nameko.css_t
+ * nameko-mw.css_t
  * ~~~~~~~~~~~~~~
  *
- * Sphinx Nameko Theme
+ * Sphinx Nameko-MW Theme
  *
- * Forked from https://github.com/ignacysokolowski/sphinx-readable-theme
+ * Forked from https://github.com/onefinestay/sphinx-nameko-theme
  *
- * :copyright: Copyright 2013 Ignacy Sokolowski; 2015 Lifealike, Ltd. DBA onefinestay
+ * :copyright: Copyright 2013 Ignacy Sokolowski; 2015 Lifealike, Ltd. DBA onefinestay, 2017 Peter Enseleit
  * :license: MIT, see LICENSE for details.
  *
  */
