@@ -161,7 +161,7 @@ div.sphinxsidebar a {
 }
 
 div.sphinxsidebar a:hover {
-    color: #0054e6;
+    color: #1a6eff;
 }
 
 div.sphinxsidebar input {
@@ -173,16 +173,16 @@ div.sphinxsidebar input {
 /* -- body styles --------------------------------------------------------- */
 
 a {
-    color: #0041b3;
+    color: #005eff;
     text-decoration: none;
 }
 
 a:visited {
-    color: #003896;
+    color: #0041b3;
 }
 
 a:hover {
-    color: #0054e6;
+    color: #1a6eff;
     text-decoration: underline;
 }
 
@@ -538,7 +538,7 @@ div.viewcode-block:target {
     }
 
     div.footer a:hover {
-        color: #0054e6;
+        color: #1a6eff;
     }
 
     div.sphinxsidebar {
@@ -566,7 +566,7 @@ div.viewcode-block:target {
     }
 
     div.sphinxsidebar a:hover {
-        color: #0054e6;
+        color: #1a6eff;
     }
 
 }
