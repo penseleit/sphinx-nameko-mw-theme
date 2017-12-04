@@ -24,6 +24,22 @@ And add this to your ``conf.py``:
     html_theme_path = [sphinx_nameko_mw_theme.get_html_theme_path()]
     html_theme = 'nameko-mw'
 
+Theme options
+==============
+
+Nameko MW theme has the following theme options available::
+
+    html_theme_options = {
+
+        # Show a logo in the document below the relative links
+        # Path is to built file location, not source file location
+        # Max width should be less than 940px
+        'doc_logo': '_images/mylogo.png',
+
+        # Include a link to the currently used theme in the footer
+        'linktotheme': 'True'
+
+}
 
 License
 =======
@@ -38,6 +54,12 @@ Version 0.0.1
 -------------
 
 First release.
+
+Version 0.0.4
+-------------
+- Added configuration options
+- Modified layout.html template
+- Modified nameko-mw.css_t file
 
 
 Theme style
