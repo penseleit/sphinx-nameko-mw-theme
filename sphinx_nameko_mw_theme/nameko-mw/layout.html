@@ -16,20 +16,26 @@
   {% if pagename == 'index' %}
   <div class="indexwrapper">
   {% endif %}
-  
+
+  {% if html_logo %}
+    <div class="logo">{{ logo }}</div>
+  {% endif %}
+  {% if html_short_title %)
+      <div class="short-title">{{ short_title }}</div>
+  {% endif %}
 
  {% endblock %}
-  
+
  {%- block relbar1 %}{{ relbar_top() }}{% endblock %}
-  
+
  {%- block relbar2 -%}{{ relbar_bottom() }}{%- endblock -%}
- 
- 
+
+
  {%- block footer %}
   {% if pagename == 'index' %}
   </div>
   {% endif %}
-  <div class="footer">  
+  <div class="footer">
 	{%- if show_copyright %}
       {%- if hasdoc('copyright') %}
         {% trans path=pathto('copyright'), copyright=copyright|e %}
@@ -47,7 +53,7 @@
         Last updated on {{ last_updated }}.
       {%- endtrans %}
     {%- endif %}
-	
+
 	{%- if show_sphinx %}
       Created using <a href="http://sphinx-doc.org/">Sphinx</a>
       {{ sphinx_version }}
@@ -63,12 +69,5 @@
         theme for Sphinx.
       {%- endif %}
     {%- endif %}
-</div>	
-{%- endblock %} 
-  
-
-
-
-
-
-
+</div>
+{%- endblock %}
