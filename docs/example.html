@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>example &#8212; Sphinx Nameko MW Theme 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/nameko-mw.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+  
+  
+
+ 
+
+  <div class="related top">
+  <nav id="rellinks">
+    <ul>
+    </ul>
+  </nav>
+  <nav id="breadcrumbs">
+    <ul>
+      <li><a href="../index.html">Sphinx Nameko MW Theme 0.0.1 documentation</a></li>
+      <li>
+        <a href="index.html">Module code</a>
+      </li> 
+    </ul>
+  </nav>
+  </div>  
+
+    <div class="document">
+        <div class="logo">
+            <img class="logo" src="../""" alt="Logo"/>
+        </div>
+        <div class="docstitle">
+            <a class="docstitle" href="../index.html">Sphinx Nameko MW Theme 0.0.1 documentation</a>
+        </div>
+    
+    
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for example</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;An example module to show autodoc style.</span>
+
+<span class="sd">Contains an example constant, :class:`Storage` class for storing objects and</span>
+<span class="sd">helper function :func:`store_integers` for storing only integers.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+
+<span class="c1">#: Example integer constant.</span>
+<span class="n">INT_CONSTANT</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1">#: Example integer constant.</span>
+<span class="n">STR_CONSTANT</span> <span class="o">=</span> <span class="s1">&#39;string&#39;</span>
+
+
+<div class="viewcode-block" id="Storage"><a class="viewcode-back" href="../index.html#example.Storage">[docs]</a><span class="k">class</span> <span class="nc">Storage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;A class for storing objects.</span>
+
+<span class="sd">    This is an example class to show autodoc style.</span>
+
+<span class="sd">    It stores a list of objects and saves date of last appended item.</span>
+<span class="sd">    Example usage::</span>
+
+<span class="sd">        &gt;&gt;&gt; storage = Storage([&#39;foo&#39;, &#39;bar&#39;])</span>
+<span class="sd">        &gt;&gt;&gt; storage.items</span>
+<span class="sd">        [&#39;foo&#39;, &#39;bar&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; storage.last_updated</span>
+<span class="sd">        datetime.datetime(2013, 8, 15, 13, 41, 38, 515797)</span>
+<span class="sd">        &gt;&gt;&gt; storage.add_item(&#39;baz&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; storage.items</span>
+<span class="sd">        [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; storage.last_updated</span>
+<span class="sd">        datetime.datetime(2013, 8, 15, 13, 41, 40, 595544)</span>
+
+<span class="sd">    :param items:</span>
+<span class="sd">        Optional list of items to start with.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">items</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1">#: List of items, add new item using :meth:`add_item`.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">items</span> <span class="o">=</span> <span class="n">items</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="c1">#: :py:class:`datetime.datetime` of last item update, will be set</span>
+        <span class="c1">#: to :py:meth:`datetime.datetime.now` on object instantiation.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_updated</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Storage.add_item"><a class="viewcode-back" href="../index.html#example.Storage.add_item">[docs]</a>    <span class="k">def</span> <span class="nf">add_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Append item to the list.</span>
+
+<span class="sd">        :attr:`last_updated` will be set to :py:meth:`datetime.datetime.now`.</span>
+
+<span class="sd">        :param item:</span>
+<span class="sd">            Something to append to :attr:`items`.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_updated</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span></div></div>
+
+
+<div class="viewcode-block" id="store_integers"><a class="viewcode-back" href="../index.html#example.store_integers">[docs]</a><span class="k">def</span> <span class="nf">store_integers</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">allow_zero</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Store integers from the given list in a storage.</span>
+
+<span class="sd">    This is an example function to show autodoc style.</span>
+
+<span class="sd">    Return :class:`Storage` instance with integers from the given list.</span>
+
+<span class="sd">    Examples::</span>
+
+<span class="sd">        &gt;&gt;&gt; storage = store_integers([1, &#39;foo&#39;, 2, &#39;bar&#39;, 0])</span>
+<span class="sd">        &gt;&gt;&gt; storage.items</span>
+<span class="sd">        [1, 2, 0]</span>
+<span class="sd">        &gt;&gt;&gt; storage = store_integers([1, &#39;foo&#39;, 2, &#39;bar&#39;, 0], allow_zero=False)</span>
+<span class="sd">        &gt;&gt;&gt; storage.items</span>
+<span class="sd">        [1, 2]</span>
+
+<span class="sd">    :param items:</span>
+<span class="sd">        List of objects of any type, only :class:`int` instances will be</span>
+<span class="sd">        stored.</span>
+<span class="sd">    :param allow_zero:</span>
+<span class="sd">        Boolean -- if ``False``, ``0`` integers will be skipped.</span>
+<span class="sd">        Defaults to ``True``.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ints</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">allow_zero</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="n">storage</span> <span class="o">=</span> <span class="n">Storage</span><span class="p">(</span><span class="n">ints</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">storage</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+ 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation index</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+    </ul>
+  </nav>
+  <nav id="breadcrumbs">
+    <ul>
+      <li><a href="../index.html">Sphinx Nameko MW Theme 0.0.1 documentation</a></li>
+      <li>
+        <a href="index.html">Module code</a>
+      </li> 
+    </ul>
+  </nav>
+  </div>
+  
+  <div class="footer">&copy; 2017.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a>
+      1.6.5
+        with the <a href="https://github.com/penseleit/sphinx-nameko-mw-theme">
+          Nameko MW</a> theme.
+</div>
+  </body>
+</html>

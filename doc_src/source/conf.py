@@ -59,18 +59,3 @@ html_theme = 'nameko-mw'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'sphinxnamekomwthemedoc'
-
-
-# -- Options for manual page output -------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (
-        'index',
-        'Sphinx Nameko MW Theme',
-        u'Sphinx Nameko MW Theme Documentation',
-        [u'penseleit'],
-        1,
-    )
-]

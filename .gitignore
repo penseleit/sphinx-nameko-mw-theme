@@ -1,5 +1,5 @@
 # Project files
-docs/_build
+doc_src/_build
 .coverage
 .tox
 

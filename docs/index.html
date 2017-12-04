@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Sphinx Nameko MW Theme &#8212; Sphinx Nameko MW Theme 0.0.1 documentation</title>
-    <link rel="stylesheet" href="_static/nameko-mw.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <title>Overview: module code &#8212; Sphinx Nameko MW Theme 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/nameko-mw.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
+        URL_ROOT:    '../',
         VERSION:     '0.0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -18,11 +18,11 @@
         SOURCELINK_SUFFIX: '.txt'
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
    
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400' rel='stylesheet' type='text/css'>
@@ -32,8 +32,6 @@
   <body>
 
   
-  
-  <div class="indexwrapper">
   
 
  
@@ -45,17 +43,17 @@
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="#">Sphinx Nameko MW Theme 0.0.1 documentation</a></li> 
+      <li><a href="../index.html">Sphinx Nameko MW Theme 0.0.1 documentation</a></li> 
     </ul>
   </nav>
   </div>  
 
     <div class="document">
         <div class="logo">
-            <img class="logo" src="""" alt="Logo"/>
+            <img class="logo" src="../""" alt="Logo"/>
         </div>
         <div class="docstitle">
-            <a class="docstitle" href="#">Sphinx Nameko MW Theme 0.0.1 documentation</a>
+            <a class="docstitle" href="../index.html">Sphinx Nameko MW Theme 0.0.1 documentation</a>
         </div>
     
     
@@ -63,466 +61,23 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="sphinx-nameko-mw-theme">
-<h1>Sphinx Nameko MW Theme<a class="headerlink" href="#sphinx-nameko-mw-theme" title="Permalink to this headline">¶</a></h1>
-<p>Official Sphinx theme for Mediaware</p>
-<p>Forked from Sphinx theme for <a class="reference external" href="https://github.com/onefinestay/nameko">Nameko</a>.
-and combined with elements from the <a class="reference external" href="https://github.com/irskep/sphinx-better-theme">Better</a>
-theme.</p>
-<div class="section" id="installation-and-setup">
-<h2>Installation and setup<a class="headerlink" href="#installation-and-setup" title="Permalink to this headline">¶</a></h2>
-<p>Install from PyPI:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install sphinx-nameko-mw-theme
-</pre></div>
-</div>
-<p>And add this to your <code class="docutils literal"><span class="pre">conf.py</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_nameko_mw_theme</span>
-
-<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_nameko_mw_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;nameko-mw&#39;</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="theme-options">
-<h2>Theme options<a class="headerlink" href="#theme-options" title="Permalink to this headline">¶</a></h2>
-<p>Nameko MW theme has the following theme options available:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
-
-    <span class="c1"># Show a logo in the document below the relative links</span>
-    <span class="c1"># Path is to built file location, not source file location</span>
-    <span class="c1"># Max width should be less than 940px</span>
-    <span class="s1">&#39;doc_logo&#39;</span><span class="p">:</span> <span class="s1">&#39;_images/mylogo.png&#39;</span><span class="p">,</span>
-
-    <span class="c1"># Include a link to the currently used theme in the footer</span>
-    <span class="s1">&#39;linktotheme&#39;</span><span class="p">:</span> <span class="s1">&#39;True&#39;</span>
-</pre></div>
-</div>
-<p>}</p>
-</div>
-<div class="section" id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>Sphinx Nameko MW Theme is licensed under the MIT license.</p>
-</div>
-<div class="section" id="changelog">
-<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="version-0-0-1">
-<h3>Version 0.0.1<a class="headerlink" href="#version-0-0-1" title="Permalink to this headline">¶</a></h3>
-<p>First release.</p>
-</div>
-<div class="section" id="version-0-0-4">
-<h3>Version 0.0.4<a class="headerlink" href="#version-0-0-4" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Added configuration options</li>
-<li>Modified layout.html template</li>
-<li>Modified nameko-mw.css_t file</li>
+  <h1>All modules for which code is available</h1>
+<ul><li><a href="example.html">example</a></li>
 </ul>
-</div>
-</div>
-<div class="section" id="theme-style">
-<h2>Theme style<a class="headerlink" href="#theme-style" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="headings">
-<span id="index-0"></span><h3>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h3>
-<h1>H1: Lorem ipsum dolor sit amet</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<h2>H2: Lorem ipsum dolor sit amet</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<h3>H3: Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<h4>H4: Lorem ipsum dolor sit amet</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<h5>H5: Lorem ipsum dolor sit amet</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<h6>H6: Lorem ipsum dolor sit amet</h6><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="section" id="paragraphs">
-<span id="index-1"></span><h3>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h3>
-<p>Duis <strong>aute irure dolor</strong> in <cite>reprehenderit</cite> in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p><a class="reference external" href="http://www.google.com">Lorem ipsum</a> <a class="footnote-reference" href="#id3" id="id4">[1]</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat <a class="reference external" href="http://docutils.sourceforge.net/rst.html">cupidatat</a> <a class="footnote-reference" href="#id5" id="id6">[2]</a>
-non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="section" id="footnotes">
-<span id="id1"></span><h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td><a class="reference external" href="http://www.google.com">http://www.google.com</a></td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id6">[2]</a></td><td><a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></td></tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="tables">
-<span id="index-2"></span><h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
-<colgroup>
-<col width="31%" />
-<col width="69%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Header row, column 1</th>
-<th class="head">Header row, column 2</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body row 1</td>
-<td>Second column of row 1</td>
-</tr>
-<tr class="row-odd"><td>body row 2</td>
-<td><p class="first">Second column of row 2</p>
-<p class="last">Second line of paragraph</p>
-</td>
-</tr>
-<tr class="row-even"><td>body row 3</td>
-<td><p class="first">Unordered list:</p>
-<ul class="last simple">
-<li>Second column of row 3</li>
-<li>Second item in bullet list (row 3, column 2)</li>
-</ul>
-</td>
-</tr>
-<tr class="row-odd"><td></td>
-<td>Row 4; column 1 will be empty</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="lists">
-<span id="index-3"></span><h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="unordered-list">
-<h4>Unordered list<a class="headerlink" href="#unordered-list" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li>Lorem ipsum</li>
-<li>Dolor sit amet<ul>
-<li>Dolor</li>
-<li>Sit</li>
-<li>Amet</li>
-</ul>
-</li>
-<li>Consectetur adipiscing elit</li>
-</ul>
-</div>
-<div class="section" id="ordered-list">
-<h4>Ordered list<a class="headerlink" href="#ordered-list" title="Permalink to this headline">¶</a></h4>
-<ol class="arabic simple">
-<li>Lorem ipsum</li>
-<li>Dolor sit amet<ol class="arabic">
-<li>Dolor</li>
-<li>Sit</li>
-<li>Amet</li>
-</ol>
-</li>
-<li>Consectetur adipiscing elit</li>
-</ol>
-</div>
-<div class="section" id="definition-lists">
-<h4>Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h4>
-<dl class="docutils">
-<dt>Lorem</dt>
-<dd>Lorem ipsum dolor sit amet.</dd>
-<dt>Ipsum</dt>
-<dd>Ipsum dolor amet sit.</dd>
-<dt>Dolor <span class="classifier-delimiter">:</span> <span class="classifier">classifier</span></dt>
-<dd>Dolor lorem ipsum.</dd>
-<dt>Sit amet <span class="classifier-delimiter">:</span> <span class="classifier">classifier one</span> <span class="classifier-delimiter">:</span> <span class="classifier">classifier two</span></dt>
-<dd>Sit amet consectetur adipiscing elit.</dd>
-</dl>
-</div>
-</div>
-<div class="section" id="topics">
-<span id="topic"></span><span id="index-4"></span><h3>Topics<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h3>
-<div class="topic">
-<p class="topic-title first">Lorem ipsum</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-</div>
-<div class="section" id="sidebars">
-<h3>Sidebars<a class="headerlink" href="#sidebars" title="Permalink to this headline">¶</a></h3>
-<div class="sidebar">
-<p class="first sidebar-title">Sidebar title</p>
-<p>Lorem ipsum dolor sit amet, nunc iaculis nulla molestie neque varius vulputate. Aenean hendrerit condimentum arcu ut porta.</p>
-<p class="last">Nullam ac velit lobortis, tincidunt est varius, condimentum lectus. In eu sapien nec lacus interdum ultricies. Aliquam in luctus metus. Nulla mattis, sem quis fringilla pharetra, dui eros consequat velit, at bibendum Mauris sed velit non nibh aliquet mattis.</p>
-</div>
-<p>Mauris sed velit non nibh aliquet mattis. Nullam ac velit lobortis, tincidunt est varius, condimentum lectus. In eu sapien nec lacus interdum ultricies. Aliquam in luctus metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-</div>
-<div class="section" id="admonitions">
-<span id="index-5"></span><span id="id2"></span><h3>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h3>
-<div class="admonition-admonition-title admonition">
-<p class="first admonition-title">Admonition title</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition attention">
-<p class="first admonition-title">Attention</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition caution">
-<p class="first admonition-title">Caution</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition danger">
-<p class="first admonition-title">Danger</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition error">
-<p class="first admonition-title">Error</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition hint">
-<p class="first admonition-title">Hint</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<dl class="last docutils">
-<dt>Module <a class="reference external" href="https://docs.python.org/2.7/library/zipfile.html#module-zipfile" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">zipfile</span></code></a></dt>
-<dd>Documentation of the <a class="reference external" href="https://docs.python.org/2.7/library/zipfile.html#module-zipfile" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">zipfile</span></code></a> standard module.</dd>
-<dt><a class="reference external" href="http://link">GNU tar manual, Basic Tar Format</a></dt>
-<dd>Documentation for tar archive files, including GNU tar extensions.</dd>
-</dl>
-</div>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-</div>
-<div class="section" id="code">
-<span id="index-6"></span><h3>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;An example module docstring to show Pygments style.&quot;&quot;&quot;</span>
-
-<span class="c1"># Some comment.</span>
-
-<span class="kn">import</span> <span class="nn">datetime</span>
-<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
-
-<span class="n">number</span> <span class="o">=</span> <span class="mi">123</span>
-<span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span>
-
-
-<span class="k">class</span> <span class="nc">ExampleClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-
-    <span class="sd">&quot;&quot;&quot;An example class docstring to show Pygments style.&quot;&quot;&quot;</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">attr1</span> <span class="o">=</span> <span class="n">attr1</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">attr2</span> <span class="o">=</span> <span class="n">attr2</span> <span class="ow">or</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
-            <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Argument: &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arg</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
-            <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Keyword argument named {}: {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
-
-    <span class="k">def</span> <span class="nf">call_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;An example method docstring.&quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Only ints allowed.&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">attr1</span> <span class="o">=</span> <span class="n">arg</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">example_property</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;An example property docstring.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">attr1</span> <span class="o">*</span> <span class="mi">2</span>
-
-
-<span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;An example function docstring to show Pygments style.&quot;&quot;&quot;</span>
-    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
-</pre></div>
-</div>
-<div class="section" id="module-example">
-<span id="autodoc"></span><span id="index-7"></span><h4>Autodoc<a class="headerlink" href="#module-example" title="Permalink to this headline">¶</a></h4>
-<p>An example module to show autodoc style.</p>
-<p>Contains an example constant, <a class="reference internal" href="#example.Storage" title="example.Storage"><code class="xref py py-class docutils literal"><span class="pre">Storage</span></code></a> class for storing objects and
-helper function <a class="reference internal" href="#example.store_integers" title="example.store_integers"><code class="xref py py-func docutils literal"><span class="pre">store_integers()</span></code></a> for storing only integers.</p>
-<dl class="data">
-<dt id="example.INT_CONSTANT">
-<code class="descname">INT_CONSTANT</code><em class="property"> = 1</em><a class="headerlink" href="#example.INT_CONSTANT" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example integer constant.</p>
-</dd></dl>
-
-<dl class="data">
-<dt id="example.STR_CONSTANT">
-<code class="descname">STR_CONSTANT</code><em class="property"> = 'string'</em><a class="headerlink" href="#example.STR_CONSTANT" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example integer constant.</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="example.Storage">
-<em class="property">class </em><code class="descname">Storage</code><span class="sig-paren">(</span><em>items=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/example.html#Storage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#example.Storage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
-<p>A class for storing objects.</p>
-<p>This is an example class to show autodoc style.</p>
-<p>It stores a list of objects and saves date of last appended item.
-Example usage:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span> <span class="o">=</span> <span class="n">Storage</span><span class="p">([</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">items</span>
-<span class="go">[&#39;foo&#39;, &#39;bar&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">last_updated</span>
-<span class="go">datetime.datetime(2013, 8, 15, 13, 41, 38, 515797)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">add_item</span><span class="p">(</span><span class="s1">&#39;baz&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">items</span>
-<span class="go">[&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">last_updated</span>
-<span class="go">datetime.datetime(2013, 8, 15, 13, 41, 40, 595544)</span>
-</pre></div>
-</div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>items</strong> – Optional list of items to start with.</td>
-</tr>
-</tbody>
-</table>
-<dl class="attribute">
-<dt id="example.Storage.items">
-<code class="descname">items</code><em class="property"> = None</em><a class="headerlink" href="#example.Storage.items" title="Permalink to this definition">¶</a></dt>
-<dd><p>List of items, add new item using <a class="reference internal" href="#example.Storage.add_item" title="example.Storage.add_item"><code class="xref py py-meth docutils literal"><span class="pre">add_item()</span></code></a>.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="example.Storage.last_updated">
-<code class="descname">last_updated</code><em class="property"> = None</em><a class="headerlink" href="#example.Storage.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><a class="reference external" href="https://docs.python.org/2.7/library/datetime.html#datetime.datetime" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">datetime.datetime</span></code></a> of last item update, will be set
-to <a class="reference external" href="https://docs.python.org/2.7/library/datetime.html#datetime.datetime.now" title="(in Python v2.7)"><code class="xref py py-meth docutils literal"><span class="pre">datetime.datetime.now()</span></code></a> on object instantiation.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="example.Storage.add_item">
-<code class="descname">add_item</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/example.html#Storage.add_item"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#example.Storage.add_item" title="Permalink to this definition">¶</a></dt>
-<dd><p>Append item to the list.</p>
-<p><a class="reference internal" href="#example.Storage.last_updated" title="example.Storage.last_updated"><code class="xref py py-attr docutils literal"><span class="pre">last_updated</span></code></a> will be set to <a class="reference external" href="https://docs.python.org/2.7/library/datetime.html#datetime.datetime.now" title="(in Python v2.7)"><code class="xref py py-meth docutils literal"><span class="pre">datetime.datetime.now()</span></code></a>.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> – Something to append to <a class="reference internal" href="#example.Storage.items" title="example.Storage.items"><code class="xref py py-attr docutils literal"><span class="pre">items</span></code></a>.</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="function">
-<dt id="example.store_integers">
-<code class="descname">store_integers</code><span class="sig-paren">(</span><em>items</em>, <em>allow_zero=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/example.html#store_integers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#example.store_integers" title="Permalink to this definition">¶</a></dt>
-<dd><p>Store integers from the given list in a storage.</p>
-<p>This is an example function to show autodoc style.</p>
-<p>Return <a class="reference internal" href="#example.Storage" title="example.Storage"><code class="xref py py-class docutils literal"><span class="pre">Storage</span></code></a> instance with integers from the given list.</p>
-<p>Examples:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span> <span class="o">=</span> <span class="n">store_integers</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">items</span>
-<span class="go">[1, 2, 0]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span> <span class="o">=</span> <span class="n">store_integers</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">allow_zero</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">storage</span><span class="o">.</span><span class="n">items</span>
-<span class="go">[1, 2]</span>
-</pre></div>
-</div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>items</strong> – List of objects of any type, only <a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">int</span></code></a> instances will be
-stored.</li>
-<li><strong>allow_zero</strong> – Boolean – if <code class="docutils literal"><span class="pre">False</span></code>, <code class="docutils literal"><span class="pre">0</span></code> integers will be skipped.
-Defaults to <code class="docutils literal"><span class="pre">True</span></code>.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-</div>
-</div>
-</div>
-
 
           </div>
         </div>
       </div>
  
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Sphinx Nameko MW Theme</a><ul>
-<li><a class="reference internal" href="#installation-and-setup">Installation and setup</a></li>
-<li><a class="reference internal" href="#theme-options">Theme options</a></li>
-<li><a class="reference internal" href="#license">License</a></li>
-<li><a class="reference internal" href="#changelog">Changelog</a><ul>
-<li><a class="reference internal" href="#version-0-0-1">Version 0.0.1</a></li>
-<li><a class="reference internal" href="#version-0-0-4">Version 0.0.4</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#theme-style">Theme style</a><ul>
-<li><a class="reference internal" href="#headings">Headings</a></li>
-<li><a class="reference internal" href="#paragraphs">Paragraphs</a></li>
-<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
-<li><a class="reference internal" href="#tables">Tables</a></li>
-<li><a class="reference internal" href="#lists">Lists</a><ul>
-<li><a class="reference internal" href="#unordered-list">Unordered list</a></li>
-<li><a class="reference internal" href="#ordered-list">Ordered list</a></li>
-<li><a class="reference internal" href="#definition-lists">Definition Lists</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#topics">Topics</a></li>
-<li><a class="reference internal" href="#sidebars">Sidebars</a></li>
-<li><a class="reference internal" href="#admonitions">Admonitions</a></li>
-<li><a class="reference internal" href="#code">Code</a><ul>
-<li><a class="reference internal" href="#module-example">Autodoc</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3>Related Topics</h3>
+        <div class="sphinxsidebarwrapper"><h3>Related Topics</h3>
 <ul>
-  <li><a href="#">Documentation index</a><ul>
+  <li><a href="../index.html">Documentation index</a><ul>
   </ul></li>
 </ul>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
+    <form class="search" action="../search.html" method="get">
       <div><input type="text" name="q" /></div>
       <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
@@ -542,11 +97,9 @@ Defaults to <code class="docutils literal"><span class="pre">True</span></code>.
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="#">Sphinx Nameko MW Theme 0.0.1 documentation</a></li> 
+      <li><a href="../index.html">Sphinx Nameko MW Theme 0.0.1 documentation</a></li> 
     </ul>
   </nav>
-  </div>
-  
   </div>
   
   <div class="footer">&copy; 2017.
