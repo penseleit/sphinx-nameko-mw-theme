@@ -70,6 +70,30 @@ h1, h2, h3, h4 {
     clear: both;
 }
 
+div.docstitle {
+    font-weight: 700;
+    font-family: "Lora","Times",serif;
+    padding: 15px 0 15px 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+a.docstitle {
+    color: #444;
+}
+
+a.docstitle:visited {
+   color: #444;
+}
+
+
+a.docstitle:hover {
+   color: #1a6eff;
+}
+
+div.logo {
+    padding: 5px 0 5px 10px;
+}
+
 div.document {
     margin: 10px auto 0 auto;
     max-width: {{ page_width }};

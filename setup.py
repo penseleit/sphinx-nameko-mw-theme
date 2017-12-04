@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='sphinx-nameko-mw-theme',
-    version='0.0.2',
+    version='0.0.4',
     author='penseleit',
     author_email='penseleit@mediaware.com.au',
     description='Sphinx Nameko MW Theme',

@@ -10,23 +10,30 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 {% endblock %}
 
-{% block header %}
+{%- block header %}
 
   {{ super() }}
   {% if pagename == 'index' %}
   <div class="indexwrapper">
   {% endif %}
 
-  {% if html_logo %}
-    <div class="logo">{{ logo }}</div>
-  {% endif %}
-  {% if html_short_title %)
-      <div class="short-title">{{ short_title }}</div>
-  {% endif %}
-
  {% endblock %}
 
  {%- block relbar1 %}{{ relbar_top() }}{% endblock %}
+
+ {%- block document %}
+    {%- if theme_doc_logo %}
+        <div class="logo">
+            <img class="logo" src="{{ pathto( theme_doc_logo, 1) }}" alt="Logo"/>
+        </div>
+    {%- endif %}
+    {%- if docstitle %}
+        <div class="docstitle">
+            <a class="docstitle" href="{{ pathto(master_doc) }}">{{ docstitle }}</a>
+        </div>
+    {% endif %}
+    {{ super() }}
+ {% endblock %}
 
  {%- block relbar2 -%}{{ relbar_bottom() }}{%- endblock -%}
 
@@ -58,14 +65,14 @@
       Created using <a href="http://sphinx-doc.org/">Sphinx</a>
       {{ sphinx_version }}
       {%- if theme_linktotheme|tobool %}
-        with the <a href="https://github.com/onefinestay/sphinx-nameko-theme">
-          Nameko</a> theme
+        with the <a href="https://github.com/penseleit/sphinx-nameko-mw-theme">
+          Nameko MW</a> theme
       {%- endif %}.
     {%- else %}
       {%- if theme_linktotheme %}
         This site uses the
-        <a href="https://github.com/onefinestay/sphinx-nameko-theme">
-        &ldquo;Nameko&rdquo;</a>
+        <a href="https://github.com/penseleit/sphinx-nameko-mw-theme">
+        &ldquo;Nameko MW&rdquo;</a>
         theme for Sphinx.
       {%- endif %}
     {%- endif %}
