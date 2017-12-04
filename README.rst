@@ -46,6 +46,10 @@ Nameko MW theme has the following theme options available::
 
 }
 
+Example
+========
+
+An example of Nameko MW theme can be seen at the `Github Pages site <https://penseleit.github.io/sphinx-nameko-mw-theme/>`_
 
 License
 =======
