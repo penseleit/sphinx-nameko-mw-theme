@@ -8,6 +8,7 @@ This file is execfile()d with the current directory set to its containing dir.
 import os
 import sys
 import pkg_resources
+import sphinx_nameko_mw_theme
 
 
 # Adding this directory to the sys path, to build autodoc of example module.
@@ -44,9 +45,9 @@ copyright = u'2017'
 # |release|, also used in various other places throughout the built documents.
 #
 # The short X.Y version.
-version = '0.1'
+version = '0.0.4'
 # The full version, including alpha/beta/rc tags.
-release = '0.0.1'
+release = '0.0.4'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -55,7 +56,14 @@ pygments_style = 'sphinx'
 # -- Options for HTML output --------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.
+html_theme_path = [sphinx_nameko_mw_theme.get_html_theme_path()]
 html_theme = 'nameko-mw'
 
-# Output file base name for HTML help builder.
-htmlhelp_basename = 'sphinxnamekomwthemedoc'
+# html_theme_options = {}
+html_theme_options = {
+  # show a logo in the document below the relative links
+  'doc_logo': '',
+
+  # Include a link to the currently used theme in the footer
+  'linktotheme': 'True'
+}
