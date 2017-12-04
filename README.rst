@@ -63,6 +63,6 @@ Initial fork
 
 Version 0.0.4
 -------------
-Added configuration options
-Modified layout.html template
-Modified nameko-mw.css_t file
+- Added configuration options
+- Modified layout.html template
+- Modified nameko-mw.css_t file
