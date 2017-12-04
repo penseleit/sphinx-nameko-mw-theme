@@ -505,6 +505,20 @@ table.docutils tbody tr td ol.last {
     margin-bottom: 0;
 }
 
+table.citation {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-color: transparent;
+
+}
+
+table.docutils.citation {
+    border-width: 0px;
+    color: #3e4349;
+}
+
 code.descname {
     font-size: 0.8em;
 }
