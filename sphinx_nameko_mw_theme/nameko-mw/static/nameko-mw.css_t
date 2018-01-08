@@ -334,11 +334,11 @@ div.topic {
 dt {
     margin-left: 10px;
     font-weight: 600;
-    font-size: 90%
+    font-size: 100%
 }
 
 dd {
-    font-size: 90%
+    font-size: 100%
 }
 
 div.sidebar p.sidebar-title, div.topic p.topic-title {
