@@ -411,7 +411,7 @@ pre {
     background-color: #f6f7f9;
     border: 1px solid #9aa2ab;
     color: #222;
-    font-size: 0.75em;
+    font-size: 100%;
     line-height: 1.5em;
     margin: 1.5em 0 1.5em 0;
     padding: 10px;
@@ -540,7 +540,7 @@ span.viewcode-link {
 }
 
 dl em {
-    font-size: 0.9em;
+    font-size: 100%;
 }
 
 .viewcode-back {
