@@ -12,3 +12,5 @@ doc_src/_build
 dist
 build
 __pycache__
+*.inv
+.buildinfo

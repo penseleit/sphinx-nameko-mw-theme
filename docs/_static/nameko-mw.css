@@ -54,6 +54,9 @@ div.related.bottom {
 
 /* -- page layout --------------------------------------------------------- */
 
+html {
+    font-size: 100%;
+}
 
 
 body {
@@ -61,6 +64,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(252, 252, 252);
+    font-size: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -116,7 +120,7 @@ div.body {
 
 div.footer {
     color: #555;
-    font-size: 14px;
+    font-size: 0.95em;
     margin: 20px auto 30px auto;
     text-align: center;
     max-width: 880px;
@@ -137,22 +141,21 @@ div.related {
 
 div.sphinxsidebar {
     float: left;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.5em;
     margin-left: -100%;
     width: 230px;
 }
 
 div.sphinxsidebarwrapper {
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.5em;
     padding: 10px 0 10px 10px;
 }
 
-div.sphinxsidebar h3,
-div.sphinxsidebar h4 {
+div.sphinxsidebar h3 {
     color: #333;
-    font-size: 24px;
+    font-size: 1em;
     font-weight: normal;
     margin: 0 0 5px 0;
     padding: 0;
@@ -247,16 +250,16 @@ div.body h2,
 div.body h3 { border-bottom: 1px solid #ddd; }
 div.body h4 { border-bottom: 1px solid #e5e5e5; }
 
-div.body h1 { font-size: 230%; }
-div.body h2 { font-size: 180%; }
-div.body h3 { font-size: 130%; }
-div.body h4 { font-size: 110%; }
-div.body h5 { font-size: 105%; }
-div.body h6 { font-size: 100%; }
+div.body h1 { font-size: 2.2em; }
+div.body h2 { font-size: 1.8em; }
+div.body h3 { font-size: 1.4em; }
+div.body h4 { font-size: 1.2em; }
+div.body h5 { font-size: 1.1em; }
+div.body h6 { font-size: 1.05em; }
 
 a.headerlink {
     color: #c60f0f;
-    font-size: 0.8em;
+    font-size: 0.95em;
     padding: 0 4px 0 4px;
     text-decoration: none;
 }
@@ -330,13 +333,24 @@ div.topic {
     margin: 0;
 }
 
+
+dt {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+dd {
+    font-size: 1em;
+}
+
 div.sidebar p.sidebar-title, div.topic p.topic-title {
     background-color: #cdcdd1;
     padding: 8px;
 }
 
 div.sidebar p, div.topic p {
-    font-size: 0.9em;
+    font-size: 0.95em;
     padding: 10px 20px 0px 20px;
 }
 
@@ -344,7 +358,7 @@ div.admonition {
     background-color: #f6f7f9;
     border: 1px solid #cdcdd1;
     padding: 0px 12px 12px 12px;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 p.admonition-title {
@@ -400,7 +414,7 @@ pre {
     background-color: #f6f7f9;
     border: 1px solid #9aa2ab;
     color: #222;
-    font-size: 0.75em;
+    font-size: 1em;
     line-height: 1.5em;
     margin: 1.5em 0 1.5em 0;
     padding: 10px;
@@ -414,7 +428,7 @@ tt, code, code.xref {
     padding: 2px;
     background-color: #fff;
     border: 1px solid #daebea;
-    font-size: 0.75em;
+
 }
 
 tt.descname, code.descname {
@@ -451,7 +465,7 @@ dl.exception code.descname {
 
 table.docutils {
     width: 100%;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 table.docutils.footnote {
@@ -505,17 +519,31 @@ table.docutils tbody tr td ol.last {
     margin-bottom: 0;
 }
 
+table.citation {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-color: transparent;
+
+}
+
+table.docutils.citation {
+    border-width: 0px;
+    color: #3e4349;
+}
+
 code.descname {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 span.viewcode-link {
-    font-size: 0.8em;
+    font-size: 0.95em;
     line-height: 1.75;
 }
 
 dl em {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .viewcode-back {
@@ -554,7 +582,7 @@ div.viewcode-block:target {
         margin: 0;
         padding: 10px 20px 20px;
         text-align: center;
-        width: 960px;
+        width: 940px;
     }
 
     div.footer a {

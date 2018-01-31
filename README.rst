@@ -2,7 +2,7 @@
 Sphinx Nameko MW Theme
 ======================
 
-Official Ssphinx theme for Mediaware
+Official Sphinx theme for Mediaware
 
 Forked from Sphinx theme for `Nameko <https://github.com/onefinestay/nameko>`_.
 and combined with elements from the `Better <https://github.com/irskep/sphinx-better-theme>`_
@@ -70,3 +70,7 @@ Version 0.0.4
 - Added configuration options
 - Modified layout.html template
 - Modified nameko-mw.css_t file
+
+Versions 0.0.5 - 0.0.9
+----------------------
+- Fine tune of formatting options
