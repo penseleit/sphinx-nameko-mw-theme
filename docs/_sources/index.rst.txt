@@ -62,6 +62,10 @@ Version 0.0.4
 - Modified nameko-mw.css_t file
 
 
+Versions 0.0.5 - 0.0.9
+----------------------
+- Fine tune formatting of HTML output
+
 Theme style
 ===========
 
